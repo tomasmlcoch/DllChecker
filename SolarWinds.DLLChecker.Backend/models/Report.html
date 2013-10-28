@@ -1,0 +1,61 @@
+﻿<html>
+    <head>
+        <script>
+            var height;
+            function collapse(el) {
+                var display = document.getElementById(el).style.display;
+                if (display == "none")
+                    document.getElementById(el).style.display = "block";
+                else
+                    document.getElementById(el).style.display = "none";
+                }
+        </script>
+        <style>
+            body { font: 12px Tahoma, Geneva, sans-serif; }
+
+    /* panel */
+            .panel
+            {
+                background: #eee;
+                margin: 5px;
+                padding: 0px 0px 5px;
+                border: 1px solid #999;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+            }
+
+    /* panel heading */
+            .panel h2
+            {
+                font-size: 18px;
+                font-weight: normal;
+                margin: 0px;
+                padding: 4px;
+                background: #CCC;
+                border-bottom: 1px solid #999;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-top: 1px solid #FFF;
+                border-right: 1px solid #FFF;
+                border-left: 1px solid #FFF;
+            }
+
+    /* panel content - do not set borders or paddings */
+            .panelcontent
+            {
+                background: #F5F5F5;
+                overflow: hidden;
+                padding: 10px;
+            }
+
+   
+            .issue h2{ background: #FF0000; }
+            .noIssue h2{ background: #33CC33; }
+        
+        </style>
+        <title>DLL Checker report</title>
+    </head>
+<body>
+	@body
+</body>
+</html>

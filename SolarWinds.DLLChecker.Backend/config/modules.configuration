@@ -1,0 +1,10 @@
+﻿# Module names ignored during analysis
+Ignored modules
+VIM
+Orion
+
+# Module name aliases
+Aliases
+APM=AP Monitor
+IPAM=IP Address Manager
+NTA=NetFlow Traffic Analyzer

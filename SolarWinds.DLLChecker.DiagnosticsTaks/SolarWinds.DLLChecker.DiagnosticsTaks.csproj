@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1169F688-7625-482A-9CE9-98E1EDAA8B52}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolarWinds.DLLChecker.DiagnosticsTaks</RootNamespace>
+    <AssemblyName>SolarWinds.DLLChecker.DiagnosticsTaks</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\Main\Tools\DiagnosticsTools\SolarWinds.DiagnosticsAnalyzer\Common\3rdParty\log4net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SolarWinds.Logging">
+      <HintPath>..\..\..\..\Main\Orion\Core\Src\bin\Debug\SolarWinds.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyFilesTaskPlugin\AssemblyFile.cs" />
+    <Compile Include="AssemblyFilesTaskPlugin\AssemblyFilesTask.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchemasTaskPlugin\Schema.cs" />
+    <Compile Include="SchemasTaskPlugin\SchemasTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolarWinds.DLLChecker.Backend\SolarWinds.DLLChecker.Backend.csproj">
+      <Project>{fa002c13-5a95-49b4-b033-267a91fbbc27}</Project>
+      <Name>SolarWinds.DLLChecker.Backend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolarWinds.DLLChecker.DiagnosticsTasksContract\SolarWinds.DLLChecker.DiagnosticsTasksContract.csproj">
+      <Project>{583a243f-b888-4d5e-a8c1-a5e93d0bde99}</Project>
+      <Name>SolarWinds.DLLChecker.DiagnosticsTasksContract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

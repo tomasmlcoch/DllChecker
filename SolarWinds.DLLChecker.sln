@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarWinds.DLLChecker.Service", "SolarWinds.DLLChecker.Service\SolarWinds.DLLChecker.Service.csproj", "{F8B67051-1360-41B4-A2FF-012A67F7A3BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarWinds.DLLChecker.Manager", "SolarWinds.DLLChecker.Manager\SolarWinds.DLLChecker.Manager.csproj", "{8986429B-5D0F-42B6-AA78-81F08E9D12F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarWinds.DLLChecker.Backend.Tests", "SolarWinds.DLLChecker.Backend.Tests\SolarWinds.DLLChecker.Backend.Tests.csproj", "{9DE0B50D-27BF-41E2-B590-65A8E4F0F6E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarWinds.DLLChecker.Backend", "SolarWinds.DLLChecker.Backend\SolarWinds.DLLChecker.Backend.csproj", "{FA002C13-5A95-49B4-B033-267A91FBBC27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarWinds.DLLChecker.DiagnosticsTasksContract", "SolarWinds.DLLChecker.DiagnosticsTasksContract\SolarWinds.DLLChecker.DiagnosticsTasksContract.csproj", "{583A243F-B888-4D5E-A8C1-A5E93D0BDE99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarWinds.DLLChecker.DiagnosticsTaks", "SolarWinds.DLLChecker.DiagnosticsTaks\SolarWinds.DLLChecker.DiagnosticsTaks.csproj", "{1169F688-7625-482A-9CE9-98E1EDAA8B52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8B67051-1360-41B4-A2FF-012A67F7A3BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B67051-1360-41B4-A2FF-012A67F7A3BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B67051-1360-41B4-A2FF-012A67F7A3BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B67051-1360-41B4-A2FF-012A67F7A3BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8986429B-5D0F-42B6-AA78-81F08E9D12F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8986429B-5D0F-42B6-AA78-81F08E9D12F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8986429B-5D0F-42B6-AA78-81F08E9D12F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8986429B-5D0F-42B6-AA78-81F08E9D12F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DE0B50D-27BF-41E2-B590-65A8E4F0F6E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE0B50D-27BF-41E2-B590-65A8E4F0F6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE0B50D-27BF-41E2-B590-65A8E4F0F6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE0B50D-27BF-41E2-B590-65A8E4F0F6E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA002C13-5A95-49B4-B033-267A91FBBC27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA002C13-5A95-49B4-B033-267A91FBBC27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA002C13-5A95-49B4-B033-267A91FBBC27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA002C13-5A95-49B4-B033-267A91FBBC27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583A243F-B888-4D5E-A8C1-A5E93D0BDE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583A243F-B888-4D5E-A8C1-A5E93D0BDE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583A243F-B888-4D5E-A8C1-A5E93D0BDE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583A243F-B888-4D5E-A8C1-A5E93D0BDE99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1169F688-7625-482A-9CE9-98E1EDAA8B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1169F688-7625-482A-9CE9-98E1EDAA8B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1169F688-7625-482A-9CE9-98E1EDAA8B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1169F688-7625-482A-9CE9-98E1EDAA8B52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
