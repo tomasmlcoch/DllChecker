@@ -15,6 +15,8 @@
     [Export(typeof(IDiagnosticsTask))]
     public class SchemasTask : IDiagnosticsTask
     {
+        public String GetTaskName() { return "Schemas Task"; }
+
         private string CalculateHash(string filePath)
         {
             return BitConverter.ToString(MD5.Create().ComputeHash(File.ReadAllBytes(filePath))).Replace("-", "");

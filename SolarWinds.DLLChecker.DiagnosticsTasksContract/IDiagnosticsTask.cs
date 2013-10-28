@@ -11,6 +11,7 @@ namespace SolarWinds.DLLChecker.DiagnosticsTasksContract
 
         ReportMessage CreatePattern(IDiagnosticsManager manager, IPatternsRepository repository);
         ReportMessage CompareWithPattern(IDiagnosticsManager manager, IPatternsRepository repository);
+        String GetTaskName();
         
     }
 }

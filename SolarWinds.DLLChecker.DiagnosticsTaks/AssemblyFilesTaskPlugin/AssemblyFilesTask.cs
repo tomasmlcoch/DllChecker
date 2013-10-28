@@ -18,6 +18,8 @@
     {
         private static readonly SolarWinds.Logging.Log Log = new SolarWinds.Logging.Log();
 
+        public String GetTaskName() {return "AssemblyFiles Task"; }
+
         public int CompareVersions(string version1, string version2)
         {
             Version version;

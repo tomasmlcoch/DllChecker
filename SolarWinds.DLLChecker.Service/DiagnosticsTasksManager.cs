@@ -52,6 +52,7 @@
             {
                 try
                 {
+                    Log.Info(task.GetTaskName());
                     reportMessages.Add(task.CompareWithPattern(manager, repository));
                 }
                 catch (Exception exception)

@@ -1,9 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SolarWinds.DLLChecker.Manager.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
   <Profiles />
-  <Settings>
-    <Setting Name="ConnectionString" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Data Source=C:\depot\Maros\Dev\Research\Klimovsky\SolarWinds.DLLChecker\SolarWinds.DLLChecker.Backend\bin\Debug\PatternsDatabase.sdf</Value>
-    </Setting>
-  </Settings>
+  <Settings />
 </SettingsFile>

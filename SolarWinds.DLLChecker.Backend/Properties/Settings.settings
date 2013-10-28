@@ -6,7 +6,7 @@
       <Value Profile="(Default)">C:/diagnostics</Value>
     </Setting>
     <Setting Name="ConnectionString" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Data Source=C:\depot\Maros\Dev\Research\Klimovsky\SolarWinds.DLLChecker\SolarWinds.DLLChecker.Backend\PatternsDatabase.sdf</Value>
+      <Value Profile="(Default)">Data Source=.\PatternsDatabase.sdf</Value>
     </Setting>
   </Settings>
 </SettingsFile>
