@@ -56,10 +56,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net">
-      <HintPath>..\..\..\..\Main\Tools\DiagnosticsTools\SolarWinds.DiagnosticsAnalyzer\Common\3rdParty\log4net\log4net.dll</HintPath>
+      <HintPath>..\..\..\P4\Research\3rdparty\log4net.dll</HintPath>
     </Reference>
     <Reference Include="SolarWinds.Logging">
-      <HintPath>..\..\..\..\Main\Orion\bin\Debug\SolarWinds.Logging.dll</HintPath>
+      <HintPath>..\..\..\P4\Research\3rdparty\SolarWinds.Logging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />

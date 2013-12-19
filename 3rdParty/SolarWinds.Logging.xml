@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SolarWinds.Logging</name>
+    </assembly>
+    <members>
+        <member name="F:SolarWinds.Logging.Ext.EventID.EventIDLogImpl.ThisDeclaringType">
+            <summary>
+            The fully qualified name of this declaring type not the type of any subclass.
+            </summary>
+        </member>
+        <member name="F:SolarWinds.Logging.Ext.EventID.EventIDLogManager.s_wrapperMap">
+            <summary>
+            The wrapper map to use to hold the <see cref="T:SolarWinds.Logging.Ext.EventID.EventIDLogImpl"/> objects
+            </summary>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.#ctor">
+            <summary>
+            Private constructor to prevent object creation
+            </summary>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.Exists(System.String)">
+            <summary>
+            Returns the named logger if it exists
+            </summary>
+            <remarks>
+            <para>If the named logger exists (in the default hierarchy) then it
+            returns a reference to the logger, otherwise it returns
+            <c>null</c>.</para>
+            </remarks>
+            <param name="name">The fully qualified logger name to look for</param>
+            <returns>The logger found, or null</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.Exists(System.String,System.String)">
+            <summary>
+            Returns the named logger if it exists
+            </summary>
+            <remarks>
+            <para>If the named logger exists (in the specified domain) then it
+            returns a reference to the logger, otherwise it returns
+            <c>null</c>.</para>
+            </remarks>
+            <param name="domain">the domain to lookup in</param>
+            <param name="name">The fully qualified logger name to look for</param>
+            <returns>The logger found, or null</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.Exists(System.Reflection.Assembly,System.String)">
+            <summary>
+            Returns the named logger if it exists
+            </summary>
+            <remarks>
+            <para>If the named logger exists (in the specified assembly's domain) then it
+            returns a reference to the logger, otherwise it returns
+            <c>null</c>.</para>
+            </remarks>
+            <param name="assembly">the assembly to use to lookup the domain</param>
+            <param name="name">The fully qualified logger name to look for</param>
+            <returns>The logger found, or null</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.GetCurrentLoggers">
+            <summary>
+            Returns all the currently defined loggers in the default domain.
+            </summary>
+            <remarks>
+            <para>The root logger is <b>not</b> included in the returned array.</para>
+            </remarks>
+            <returns>All the defined loggers</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.GetCurrentLoggers(System.String)">
+            <summary>
+            Returns all the currently defined loggers in the specified domain.
+            </summary>
+            <param name="domain">the domain to lookup in</param>
+            <remarks>
+            The root logger is <b>not</b> included in the returned array.
+            </remarks>
+            <returns>All the defined loggers</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.GetCurrentLoggers(System.Reflection.Assembly)">
+            <summary>
+            Returns all the currently defined loggers in the specified assembly's domain.
+            </summary>
+            <param name="assembly">the assembly to use to lookup the domain</param>
+            <remarks>
+            The root logger is <b>not</b> included in the returned array.
+            </remarks>
+            <returns>All the defined loggers</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.GetLogger(System.String)">
+            <summary>
+            Retrieve or create a named logger.
+            </summary>
+            <remarks>
+            <para>Retrieve a logger named as the <paramref name="name"/>
+            parameter. If the named logger already exists, then the
+            existing instance will be returned. Otherwise, a new instance is
+            created.</para>
+            
+            <para>By default, loggers do not have a set level but inherit
+            it from the hierarchy. This is one of the central features of
+            log4net.</para>
+            </remarks>
+            <param name="name">The name of the logger to retrieve.</param>
+            <returns>the logger with the name specified</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.GetLogger(System.String,System.String)">
+            <summary>
+            Retrieve or create a named logger.
+            </summary>
+            <remarks>
+            <para>Retrieve a logger named as the <paramref name="name"/>
+            parameter. If the named logger already exists, then the
+            existing instance will be returned. Otherwise, a new instance is
+            created.</para>
+            
+            <para>By default, loggers do not have a set level but inherit
+            it from the hierarchy. This is one of the central features of
+            log4net.</para>
+            </remarks>
+            <param name="domain">the domain to lookup in</param>
+            <param name="name">The name of the logger to retrieve.</param>
+            <returns>the logger with the name specified</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.GetLogger(System.Reflection.Assembly,System.String)">
+            <summary>
+            Retrieve or create a named logger.
+            </summary>
+            <remarks>
+            <para>Retrieve a logger named as the <paramref name="name"/>
+            parameter. If the named logger already exists, then the
+            existing instance will be returned. Otherwise, a new instance is
+            created.</para>
+            
+            <para>By default, loggers do not have a set level but inherit
+            it from the hierarchy. This is one of the central features of
+            log4net.</para>
+            </remarks>
+            <param name="assembly">the assembly to use to lookup the domain</param>
+            <param name="name">The name of the logger to retrieve.</param>
+            <returns>the logger with the name specified</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.GetLogger(System.Type)">
+            <summary>
+            Shorthand for <see cref="M:log4net.LogManager.GetLogger(System.String)"/>.
+            </summary>
+            <remarks>
+            Get the logger for the fully qualified name of the type specified.
+            </remarks>
+            <param name="type">The full name of <paramref name="type"/> will 
+            be used as the name of the logger to retrieve.</param>
+            <returns>the logger with the name specified</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.GetLogger(System.String,System.Type)">
+            <summary>
+            Shorthand for <see cref="M:log4net.LogManager.GetLogger(System.String)"/>.
+            </summary>
+            <remarks>
+            Get the logger for the fully qualified name of the type specified.
+            </remarks>
+            <param name="domain">the domain to lookup in</param>
+            <param name="type">The full name of <paramref name="type"/> will 
+            be used as the name of the logger to retrieve.</param>
+            <returns>the logger with the name specified</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.GetLogger(System.Reflection.Assembly,System.Type)">
+            <summary>
+            Shorthand for <see cref="M:log4net.LogManager.GetLogger(System.String)"/>.
+            </summary>
+            <remarks>
+            Get the logger for the fully qualified name of the type specified.
+            </remarks>
+            <param name="assembly">the assembly to use to lookup the domain</param>
+            <param name="type">The full name of <paramref name="type"/> will 
+            be used as the name of the logger to retrieve.</param>
+            <returns>the logger with the name specified</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.WrapLogger(log4net.Core.ILogger)">
+            <summary>
+            Lookup the wrapper object for the logger specified
+            </summary>
+            <param name="logger">the logger to get the wrapper for</param>
+            <returns>the wrapper for the logger specified</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.WrapLoggers(log4net.Core.ILogger[])">
+            <summary>
+            Lookup the wrapper objects for the loggers specified
+            </summary>
+            <param name="loggers">the loggers to get the wrappers for</param>
+            <returns>Lookup the wrapper objects for the loggers specified</returns>
+        </member>
+        <member name="M:SolarWinds.Logging.Ext.EventID.EventIDLogManager.WrapperCreationHandler(log4net.Core.ILogger)">
+            <summary>
+            Method to create the <see cref="T:log4net.Core.ILoggerWrapper"/> objects used by
+            this manager.
+            </summary>
+            <param name="logger">The logger to wrap</param>
+            <returns>The wrapper for the logger specified</returns>
+        </member>
+        <member name="F:SolarWinds.Logging.Log.FolderCommonApplicationData">
+            <summary>
+            SpecialFolder CommonApplicationData + Solarwinds directory
+            </summary>
+        </member>
+        <member name="M:SolarWinds.Logging.Log.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SolarWinds.Logging.Log"/> class.
+            XP/2003 -&gt; C:\Documents and Settings\All Users\Application Data
+            Vista/Win7/2008 -&gt; C:\ProgramData
+            </summary>
+        </member>
+    </members>
+</doc>
